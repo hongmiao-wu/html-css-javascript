@@ -1,2 +1,7 @@
 <!-- Check box of each Request-->
                 <input type="checkbox" class="requestCheckbox" th:name="requestIds" th:value="${appointmentRequest.id}" onchange="updateMasterCheckboxState();" onclick="event.stopPropagation();" style="margin-right: 10px; transform: scale(1.1);" />
+<!-- Master Check box -->
+<div class="masterCheckbox" style="margin-bottom: 10px;">
+            <input type="checkbox" id="masterCheckbox" onclick="toggleAllRequests(this)" style="margin-left: 6px; margin-right: 6px; transform: scale(1.5);"/>
+            <label for="masterCheckbox" style="color: gray;"></label>
+            </div>
